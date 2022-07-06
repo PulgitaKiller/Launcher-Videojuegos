@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5D209A83-9462-4879-AA17-2079131CE7E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Launcher</RootNamespace>
+    <AssemblyName>Launcher</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pagBird.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pagBird.Designer.cs">
+      <DependentUpon>pagBird.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pagHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pagHome.Designer.cs">
+      <DependentUpon>pagHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pagSimon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pagSimon.Designer.cs">
+      <DependentUpon>pagSimon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pagSnake.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pagSnake.Designer.cs">
+      <DependentUpon>pagSnake.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pagTopo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pagTopo.Designer.cs">
+      <DependentUpon>pagTopo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pagBird.resx">
+      <DependentUpon>pagBird.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pagHome.resx">
+      <DependentUpon>pagHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pagSimon.resx">
+      <DependentUpon>pagSimon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pagSnake.resx">
+      <DependentUpon>pagSnake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pagTopo.resx">
+      <DependentUpon>pagTopo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Titulo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RetroSnake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CapRetroSnake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CapSimonDice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SimonDice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlappyBird.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CapFlappy Bird.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PegaleAlTopo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CapTopo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Games\JuegoFlappyBird.exe" />
+    <Content Include="Games\JuegoMarmota.exe" />
+    <Content Include="Games\Menu.exe" />
+    <Content Include="Games\SimonDice.exe" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
